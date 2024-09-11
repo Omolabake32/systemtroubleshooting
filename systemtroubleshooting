@@ -1,0 +1,31 @@
+def troubleshoot_computer():
+    print("DEOLA PC TROUBLESHOOTING!")
+    
+    # Step 1: Check if the computer is plugged in
+    plugged_in = input("Is the computer plugged in? (y/n): ").strip().lower()
+    if plugged_in != 'y':
+        print("Please replug in the computer and try turning it on again.")
+        return
+
+    # Step 2: Check the booting process
+    booting_process = input("Is the booting process slow? (y/n): ").strip().lower()
+    if booting_process != 'n':
+        print("Try to Restart the Pc and check again.")
+        return
+
+    # Step 3: Checking for System Temperature
+    temperature = input("Is the system temperature hot when you turn it on? (y/n): ").strip().lower()
+    if temperature == 'y':
+        print("Kindly off the Pc and Leave it to cool, if still the same contact Professional h.")
+        return
+
+    # Step 4: Check the monitor
+    monitor_on = input("Is the monitor turned on? (y/n): ").strip().lower()
+    if monitor_on != 'y':
+        print("Please turn on the monitor and check the connections.")
+        return
+
+    # Step 5: Final check
+    print("If system check is complete and error still persist, consider seeking professional help.")
+
+troubleshoot_computer()
